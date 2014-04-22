@@ -4,19 +4,18 @@
 }
 
 html, body {
-  height: 100%;
+  height: 1em;
 }
 
 body {
-  background-color: white;
   font-family: 'Droid Sans', 'sans-serif';
-  font-size: 13px;
+  font-size: 14px;
   width: 40em;
   margin: 3em 0 2em 5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+  font-size: 1em;
 }
 
 h1 {
@@ -37,9 +36,13 @@ a:hover {
   text-decoration: underline!important;
 }
 
+code {
+  font-family: 'Menlo', 'Monaco', monospace;
+  font-size: .9em;
+}
+
 table {
   font-size: inherit;
-  font: 100%;
 }
 
 
@@ -47,46 +50,44 @@ table {
 
 ul.posts {
   list-style-type: none;
-  margin-bottom: 2em;
-}
-
-ul.posts li {
-  line-height: 1.75em;
+  margin: 0 0 2em 1em;
 }
 
 ul.posts span {
-  font-size: 80%;
+  font-family: helvetica, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
 }
 
+ul.posts a {
+  margin-left: 0.5em;
+}
 
 /* Site */
 
-#main-nav {
+#nav {
   color: steelblue;
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 2em;
 }
 
-#main-nav li {
+#nav li {
   display: inline;
 }
 
-#main-nav a {
+#nav a {
   color: steelblue;
   text-decoration: none;
 }
 
-#main-nav a.extra {
-  color: hsl(0, 0%, 67%);
+#nav a.extra {
+  color: #999;
   text-decoration: none;
   margin-left: 1em;
 }
 
-#main-nav .meta {
-  color: #aaa;
-}
-
-#main-footer {
+#footer {
   border-top: 4px solid #eee;
   padding: 1em 0;
   margin: 2em 0;
@@ -104,11 +105,12 @@ ul.posts span {
 }
 
 .post header h1 {
-  font-size: 150%;
+  font-size: 1.5em;
   display: inline;
 }
 
 .post header time {
+  margin-left: .5em;
   color: #999;
 }
 
@@ -122,30 +124,45 @@ ul.posts span {
   text-align: justify;
 }
 
-.post ul,
-.post ol {
-  margin-left: 1.35em;
+.post section ul,
+.post section ol {
+  margin-left: 1em;
 }
 
-
-.post pre {
+.post section pre {
   padding-left: 2em;
   margin: 1em 0;
-  border-left: 5px solid #ccc;
+  border-left: 4px solid #eee;
 }
 
-.post pre code {
+.post section pre code {
   margin: 1em 0;
-  font-family: Menlo, Monaco, monospace;
-  font-size: .9em;
+  display: inline-block;
 }
 
-.post blockquote {
+.post section blockquote {
   padding: .1em 0 .1em 2em;
-  border-left: 5px solid #ccc;
+  border-left: 4px solid #eee;
   font-style: italic;
 }
 
-.post blockquote p {
+.post section blockquote p {
   font-family: 'Droid Sans', sans-serif;
+}
+
+.post footer {
+  margin: 2em 0 1em 0;
+}
+
+.post footer .metalinks {
+  font-size: .85em;
+  height: 1em;
+}
+
+.post footer .metalinks .prev {
+  float: left;
+}
+
+.post footer .metalinks .next {
+  float: right;
 }

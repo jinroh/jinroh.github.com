@@ -12,17 +12,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et libero non 
 
 > Fusce dui diam, pharetra id accumsan vel, lobortis non enim. Curabitur gravida mauris quis nibh scelerisque fermentum. Suspendisse sit amet nisi commodo, lacinia sapien eu, tempor magna.
 
-Phasellus a est sed lectus ultricies pretium ac quis arcu. Maecenas tincidunt auctor ante eget lacinia. Cras nisi arcu, viverra non ullamcorper eget, sagittis ut felis. Sed ut tincidunt purus, id rhoncus mi. Nunc in lorem eu augue dignissim pulvinar sed sit amet risus. Mauris sed porttitor sem, ac laoreet nisi. Donec feugiat vestibulum risus vitae pharetra. Nulla molestie dignissim ultricies. Donec sapien nibh, placerat eget iaculis a, posuere sed ante.
+Phasellus a est sed lectus ultricies pretium ac quis arcu. Maecenas tincidunt auctor ante eget lacinia. Cras nisi arcu, viverra non ullamcorper eget, sagittis ut felis. Sed ut tincidunt purus, id rhoncus mi. Nunc in lorem eu augue dignissim pulvinar sed sit amet risus. [Mauris sed porttitor](http://google.fr) sem, ac laoreet nisi. Donec feugiat vestibulum risus vitae pharetra. Nulla molestie dignissim ultricies. Donec sapien nibh, placerat eget iaculis a, posuere sed ante.
 
 # Ipsum
 
 Nulla cursus elit vitae iaculis fringilla. Maecenas fermentum diam ut magna rutrum auctor. Praesent vel felis ullamcorper, ultricies nisl id, tincidunt odio. Sed libero mi, commodo vestibulum quam a, dictum pellentesque velit. Ut velit nisi, interdum eget eros et, posuere feugiat tortor. Praesent vitae malesuada libero. Sed sed justo arcu. Pellentesque in convallis enim, eget adipiscing urna. Aliquam lacus neque, fringilla at enim lacinia, imperdiet placerat justo. Sed pretium, lacus ut volutpat vulputate, est leo fringilla urna, ut scelerisque tellus turpis adipiscing libero. Mauris quis erat aliquet, dictum arcu sed, lacinia eros. Ut eu nisl sodales ipsum adipiscing varius. Maecenas tincidunt dui elit, a aliquam nisi commodo non. Sed suscipit, urna ac rhoncus tempus, purus felis luctus est, at vehicula leo mi in ipsum. Cras lacus ante, rutrum eget augue in, cursus aliquet nisi.
 
 
-```
+```javascript
 (function(a) {
     return function(x) {
-        return x + a;
+        return x + a + 'foo';
     }
 })();
 ```
