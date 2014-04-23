@@ -11,5 +11,15 @@
       {% if page.previous %}<a href="{{ page.previous.url }}" class="prev">Previous post</a>{% endif %}
       {% if page.next %}<a href="{{ page.next.url }}" class="next">Next post</a>{% endif %}
     </div>
+    <div class="tags">
+      {% if page.tags %}
+      tagged
+      <ul>
+        {% for tag in page.tags %}
+          <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
   </footer>
 </article>

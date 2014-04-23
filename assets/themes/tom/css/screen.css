@@ -1,3 +1,10 @@
+/*
+  orange: #ef8a62
+  white:  #f7f7f7
+  blue:   #67a9cf
+  grey:   #999
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +15,7 @@ html, body {
 }
 
 body {
+  background-color: white;
   font-family: 'Droid Sans', 'sans-serif';
   font-size: 14px;
   width: 40em;
@@ -88,7 +96,7 @@ ul.posts a {
 }
 
 #footer {
-  border-top: 4px solid #eee;
+  border-top: 4px solid #f7f7f7;
   padding: 1em 0;
   margin: 2em 0;
   overflow: hidden;
@@ -97,7 +105,7 @@ ul.posts a {
 /* Posts */
 
 .post a:visited {
-  color: #a0a;
+  color: #ef8a62;
 }
 
 .post header {
@@ -132,7 +140,7 @@ ul.posts a {
 .post section pre {
   padding-left: 2em;
   margin: 1em 0;
-  border-left: 4px solid #eee;
+  border-left: 4px solid #f7f7f7;
 }
 
 .post section pre code {
@@ -142,7 +150,7 @@ ul.posts a {
 
 .post section blockquote {
   padding: .1em 0 .1em 2em;
-  border-left: 4px solid #eee;
+  border-left: 4px solid #f7f7f7;
   font-style: italic;
 }
 
@@ -152,17 +160,38 @@ ul.posts a {
 
 .post footer {
   margin: 2em 0 1em 0;
-}
-
-.post footer .metalinks {
   font-size: .85em;
-  height: 1em;
+  text-transform: lowercase;
+  color: #999;
 }
 
 .post footer .metalinks .prev {
   float: left;
 }
+.post footer .metalinks .prev::before {
+  content: "\21FD  ";
+}
 
 .post footer .metalinks .next {
   float: right;
+}
+.post footer .metalinks .next::after {
+  content: "  \21FE";
+}
+
+.post footer .tags {
+  clear: both;
+  padding-top: 1em;
+}
+.post footer .tags ul {
+  display: inline;
+}
+.post footer .tags li {
+  display: inline;
+}
+.post footer .tags li::after {
+  content: ", ";
+}
+.post footer .tags li:last-child::after {
+  content: ". ";
 }

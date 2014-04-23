@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 description: ""
 category: 
-tags: []
+tags: ["foo","bar","baz"]
 ---
 
 # Lorem
